@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root{
+    --Pale-Blue:  hsl(225, 100%, 94%);
+    --Bright-Blue: hsl(245, 75%, 52%);
+    --Very-Pale-Blue: hsl(225, 100%, 98%);
+    --Desaturated-Blue: hsl(224, 23%, 55%);
+    --Dark-Blue: hsl(223, 47%, 23%);
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-size: 16px;
+    font-family: 'Red Hat Display', Tahoma;
+    background-color: var(--Pale-Blue);
+    background-image: url('./images/pattern-background-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.container{
+    width: 450px;
+    margin: 100px auto;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.order-summary{
+    text-align: center;
+    padding: 30px;
+}
+
+.order-summary > .title{    
+    color: var(--Dark-Blue);
+    margin-bottom: 20px;
+    font-weight: 900;
+}
+
+.order-summary > p {
+    color: var(--Desaturated-Blue);
+    line-height: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.new-line{
+    display: block;
+}
+
+.plan{
+    display: flex;
+    width: 100%;
+    background-color: var(--Very-Pale-Blue);
+    padding: 20px;
+    border-radius: 10px;
+    align-items: center;
+    margin-bottom: 30px;
+
+}
+
+.plan i {
+    margin-right: 15px;
+}
+
+.annual-plan{
+    margin-right: 140px;
+}
+
+.annual-plan > p:nth-of-type(1){
+    color: var(--Dark-Blue);
+    font-weight: 700;
+    padding-bottom: 2px;
+}
+
+.annual-plan > p:nth-of-type(2){
+    color: var(--Desaturated-Blue);
+    font-size: 0.9rem;
+}
+
+.plan > a{
+    color: var(--Bright-Blue);
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+
+.plan a:active{
+    text-decoration: none;
+    opacity: 0.5;
+}
+
+.payment{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.payment button{
+    border: none;
+    height: 45px;
+    border-radius: 10px;
+    background-color: var(--Bright-Blue);
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.payment button:active{
+    opacity: 0.5;
+}
+
+.payment a{
+    color: var(--Desaturated-Blue);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.payment a:active{
+    color: var(--Dark-Blue);
+}
+
+@media(max-width: 720px){
+    .container{
+        
+    }
+
+    body{
+        padding: 10px;
+        background-image: url('./images/pattern-background-mobile.svg');
+
+    }
+}
+  
